@@ -1,5 +1,5 @@
 //Prompt user for language code
-let languageCode = prompt("Enter two-letter language code (es, de, en or fr):").toLowerCase();
+let languageCode = prompt("Enter two-letter language code (es, de, en or fr): ").toLowerCase();
 
 //Check code entered and display "hello world" in corresponding message
 if (languageCode === "es") {
