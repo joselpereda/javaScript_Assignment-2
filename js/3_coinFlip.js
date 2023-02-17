@@ -2,7 +2,11 @@
 let randomNum = Math.round(Math.random());
 
 //Prompt user to select heads or tails
-let choice = prompt("Choose Heads or Tails :").toLowerCase();
+let choice;
+
+do {
+    choice = prompt("Choose Heads or Tails :").toLowerCase();
+} while (!(choice === "heads" || choice === "tails"))
 
 // Use a conditional to check the result of the coin flip. If it’s less than a certain number (75), it will be heads. If it’s greater than a certain number, it will be tails. 
 // If the result is heads and the user selects heads, display the following message within an alert: 
